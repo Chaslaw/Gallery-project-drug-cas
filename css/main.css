@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: white;
+}
+
+:root {
+  --color-primary: rgb(28, 32, 34);
+  --color-secondary: rgb(213 150 107);
+  --color-tertiary: rgb(230 179 144);
+}
+
+header {
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(28, 32, 34, 1), rgba(28, 32, 34, 0.8), rgba(28, 32, 34, 0.5), rgba(28, 32, 34, 0));
+  position: fixed;
+  top: -55px;
+  z-index: 1;
+  transition: 0.8s;
+  box-shadow: 0 0.5px 5px antiquewhite;
+  cursor: pointer;
+}
+
+header:hover {
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo-holder img {
+   width: 15%;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-ul {
+  list-style-type:none;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-ul li {
+  margin-right: 15px;
+}
+
+/* HERO */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hero-section .banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner.banner-first {
+  position: relative;
+  background-color: var(--color-primary);
+}
+
+.banner.banner-second {
+  position: relative;
+  background-image: url(../assets/images-home/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner.banner-third {
+  position: relative;
+}
+
+
+.banner-inside {
+  position: absolute;
+  height: 500px;
+  width: 60%;
+  top: 30%;
+  left: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-text {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.banner-heading {
+  position: absolute;
+  top: 30%;
+  right: -200px;
+  z-index: 2;
+  mix-blend-mode: difference;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: left;
+  color: white;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: -200px;
+  z-index: 2;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: left;
+  color: black;
+}
+
+/* MAIN */
+
+.content {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.content div {
+  padding: 30px;
+}
+
+ .first {
+  grid-column: 1/3;
+}
+
+.second {
+  grid-column: 3/6;
+}
+
+.third {
+  grid-column: 1/4;
+  grid-row: 2/4;
+}  
+
+.fourth {
+  grid-column: 4/6;
+}
+
+.fifth {
+  grid-column: 4/6;
+}
+
+
